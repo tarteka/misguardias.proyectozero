@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mis Guardias — Gestión de turnos RTSU Gipuzkoa</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <img src="assets/app_icon.png" alt="Mis Guardias" class="nav-icon" />
+    Mis Guardias<span class="dot">.</span>
+  </div>
+  <div class="nav-right">
+    <button id="theme-toggle" aria-label="Cambiar tema">🌙</button>
+    <a class="btn-sm" href="#descarga">Descargar</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="badge">RTSU Gipuzkoa · v1.2.0</div>
+  <h1>Tus turnos,<br/><span>siempre al día</span></h1>
+  <p>Gestiona y visualiza tus guardias de forma automática. Sincronización directa con el portal del trabajador, recordatorios y estadísticas de un vistazo.</p>
+  <div class="hero-actions">
+    <a href="#descarga" class="btn btn-primary">📥 Descargar APK</a>
+    <a href="#funcionalidades" class="btn btn-outline">Ver funcionalidades</a>
+  </div>
+  <div class="version-chip">Android · Gratis</div>
+</section>
+
+<!-- MOCKUP con screenshot real -->
+<div class="mockup-section">
+  <div class="phone-frame phone-frame--lg">
+    <div class="phone-frame__notch"></div>
+    <img
+      id="calendar-screenshot"
+      src="assets/calendario-claro.png"
+      alt="Calendario de turnos – Mis Guardias"
+    />
+  </div>
+</div>
+
+<!-- STATS STRIP -->
+<div class="stats">
+  <div class="stat">
+    <div class="stat-value">2×</div>
+    <div class="stat-label">Sincronización diaria automática</div>
+  </div>
+  <div class="stat">
+    <div class="stat-value">5</div>
+    <div class="stat-label">Opciones de recordatorio previo</div>
+  </div>
+  <div class="stat">
+    <div class="stat-value">D/N</div>
+    <div class="stat-label">Turnos de día y noche diferenciados</div>
+  </div>
+  <div class="stat">
+    <div class="stat-value">🔒</div>
+    <div class="stat-label">Credenciales cifradas en el dispositivo</div>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<section class="features" id="funcionalidades">
+  <p class="section-label">Funcionalidades</p>
+  <h2 class="section-title">Todo lo que necesitas para tus guardias</h2>
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon">📅</div>
+      <h3>Calendario mensual</h3>
+      <p>Navega entre meses con un gesto. Tus turnos D y N siempre visibles de un vistazo.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔄</div>
+      <h3>Sincronización automática</h3>
+      <p>A las 10:00 y 22:00 la app actualiza tus turnos en segundo plano, sin que hagas nada.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔔</div>
+      <h3>Alarmas y recordatorios</h3>
+      <p>Configura avisos 2, 4, 8, 12 o 24 horas antes de cada turno para no pillar a nadie por sorpresa.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📊</div>
+      <h3>Estadísticas anuales</h3>
+      <p>Consulta el total de guardias, horas trabajadas y reparto día/noche mes a mes.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📝</div>
+      <h3>Notas personales</h3>
+      <p>Añade anotaciones privadas a cualquier día del calendario.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🎨</div>
+      <h3>Tema claro y oscuro</h3>
+      <p>Personaliza el color de acento y elige el tema que mejor se adapte a tu turno de noche.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SCREENSHOTS GALLERY -->
+<section class="gallery">
+  <p class="section-label">Capturas de pantalla</p>
+  <h2 class="section-title">La app, de cerca</h2>
+  <div class="gallery-scroll">
+    <figure class="gallery-item">
+      <div class="phone-frame phone-frame--sm">
+        <div class="phone-frame__notch"></div>
+        <img src="assets/resumen-guardias.png" alt="Resumen de guardias" />
+      </div>
+      <figcaption>Resumen anual</figcaption>
+    </figure>
+    <figure class="gallery-item">
+      <div class="phone-frame phone-frame--sm">
+        <div class="phone-frame__notch"></div>
+        <img src="assets/notas-guardias.png" alt="Notas por día" />
+      </div>
+      <figcaption>Notas por día</figcaption>
+    </figure>
+    <figure class="gallery-item">
+      <div class="phone-frame phone-frame--sm">
+        <div class="phone-frame__notch"></div>
+        <img src="assets/ajustes.png" alt="Ajustes" />
+      </div>
+      <figcaption>Ajustes</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="descarga">
+  <img src="assets/app_icon.png" alt="Mis Guardias" class="cta-icon" />
+  <h2>Descarga Mis Guardias</h2>
+  <p>Disponible para Android. Conéctala con tu cuenta del portal RTSU Gipuzkoa y ten tus turnos siempre al día.</p>
+  <!-- TODO: sustituir href="#" por la URL de Google Play cuando esté publicada -->
+  <a href="#" class="btn btn-play">
+    <img src="assets/google-play-badge.png" alt="Disponible en Google Play" class="play-badge" />
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Hecho con ❤️ para el personal de <strong>RTSU Gipuzkoa</strong> por Sergio Moreno · <a href="https://proyectozero.org">Proyecto Zero</a> · <a href="privacy.html">Política de privacidad</a></p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

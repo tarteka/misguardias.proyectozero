@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad — Mis Guardias</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .policy {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 6rem;
+    }
+    .policy-header {
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .policy-header h1 {
+      font-size: clamp(1.8rem, 4vw, 2.4rem);
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+    }
+    .policy-header time {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    .policy h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin: 2.5rem 0 0.75rem;
+      color: var(--text);
+    }
+    .policy p {
+      font-size: 0.975rem;
+      color: var(--muted);
+      line-height: 1.8;
+      margin-bottom: 0.75rem;
+    }
+    .policy strong { color: var(--text); }
+    .policy a { color: var(--blue); text-decoration: none; }
+    .policy a:hover { text-decoration: underline; }
+    .policy ul {
+      list-style: none;
+      padding: 0;
+      margin: 0.5rem 0;
+    }
+    .policy ul li {
+      font-size: 0.975rem;
+      color: var(--muted);
+      line-height: 1.8;
+      padding-left: 0;
+    }
+    .policy ul li::before {
+      content: "—";
+      margin-right: 0.5rem;
+      color: var(--blue);
+      font-weight: 700;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--blue);
+      text-decoration: none;
+      margin-bottom: 2.5rem;
+    }
+    .back-link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="index.html">
+    <img src="assets/app_icon.png" alt="Mis Guardias" class="nav-icon" />
+    Mis Guardias<span class="dot">.</span>
+  </a>
+  <div class="nav-right">
+    <button id="theme-toggle" aria-label="Cambiar tema">🌙</button>
+  </div>
+</nav>
+
+<!-- CONTENIDO -->
+<main class="policy">
+  <a href="index.html" class="back-link">← Volver</a>
+
+  <header class="policy-header">
+    <h1>Política de Privacidad</h1>
+    <time datetime="2026-03">Última actualización: marzo de 2026</time>
+  </header>
+
+  <h2>Recopilación de datos</h2>
+  <p>La aplicación <strong>Mis Guardias</strong> no recopila, almacena ni comparte datos personales de los usuarios.</p>
+  <p>Toda la información mostrada en la app proviene directamente de la plataforma <strong>Lotura</strong>, y los datos se manejan únicamente en el dispositivo del usuario.</p>
+
+  <h2>Almacenamiento local</h2>
+  <p>Las credenciales de acceso se guardan de forma <strong>cifrada</strong> en el dispositivo mediante almacenamiento seguro del sistema operativo. En ningún caso se transmiten a servidores externos ni son accesibles por terceros.</p>
+
+  <h2>Servicios de terceros</h2>
+  <p>No se utilizan servicios de terceros que puedan recolectar información. La app no envía datos a ningún servidor externo.</p>
+
+  <h2>Contacto</h2>
+  <p>Para cualquier consulta relacionada con la privacidad, puede contactar con el autor:</p>
+  <ul>
+    <li><strong>Sergio Moreno</strong></li>
+    <li><a href="https://proyectozero.org">proyectozero.org</a></li>
+  </ul>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <p>Hecho con ❤️ para el personal de <strong>RTSU Gipuzkoa</strong> por Sergio Moreno · <a href="https://proyectozero.org">Proyecto Zero</a></p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
