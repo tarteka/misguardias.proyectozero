@@ -23,101 +23,116 @@
 
 <!-- HERO -->
 <section class="hero">
-  <div class="badge">RTSU Gipuzkoa · v1.5.0</div>
-  <h1>Tus turnos,<br/><span>siempre al día</span></h1>
-  <p>Gestiona y visualiza tus guardias de forma automática. Sincronización directa con el portal del trabajador, recordatorios y estadísticas de un vistazo.</p>
-  <div class="hero-actions">
-    <a href="https://play.google.com/store/apps/details?id=org.proyectozero.misguardias" class="btn-play" target="_blank" rel="noopener"><img src="assets/GetItOnGooglePlay_Badge_Web_color_Spanish.svg" alt="Disponible en Google Play" class="play-badge" /></a>
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="badge">RTSU Gipuzkoa · v1.5.0</div>
+      <h1>Tus turnos,<br><em>siempre al día</em></h1>
+      <p>Gestión de guardias sin esfuerzo. Sincronización directa con el portal del trabajador, recordatorios y todo tu cuadrante en un vistazo.</p>
+      <a href="https://play.google.com/store/apps/details?id=org.proyectozero.misguardias" class="btn-play" target="_blank" rel="noopener">
+        <img src="assets/GetItOnGooglePlay_Badge_Web_color_Spanish.svg" alt="Disponible en Google Play" class="play-badge" />
+      </a>
+      <ul class="hero-chips">
+        <li><span class="material-symbols-rounded">android</span> Android</li>
+        <li><span class="material-symbols-rounded">money_off</span> Gratuita</li>
+        <li><span class="material-symbols-rounded">block</span> Sin anuncios</li>
+      </ul>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-glow"></div>
+      <div class="phone-frame phone-frame--lg">
+        <div class="phone-frame__notch"></div>
+        <img id="calendar-screenshot" src="assets/calendario-claro.png" alt="Calendario de turnos" />
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- MOCKUP con screenshot real -->
-<div class="mockup-section">
-  <div class="phone-frame phone-frame--lg">
-    <div class="phone-frame__notch"></div>
-    <img
-      id="calendar-screenshot"
-      src="assets/calendario-claro.png"
-      alt="Calendario de turnos – Mis Guardias"
-    />
-  </div>
-</div>
-
-<!-- FEATURES -->
+<!-- FEATURES SLIDER -->
 <section class="features" id="funcionalidades">
-  <p class="section-label">Funcionalidades</p>
-  <h2 class="section-title">Todo lo que necesitas para tus guardias</h2>
-  <div class="features-grid">
-    <div class="feature-card">
-      <div class="feature-icon"><span class="material-symbols-rounded">calendar_month</span></div>
-      <h3>Calendario mensual</h3>
-      <p>Navega entre meses con un gesto. Tus turnos D y N siempre visibles de un vistazo.</p>
+  <div class="features-inner">
+    <p class="section-label">Funcionalidades</p>
+    <h2 class="section-title">Todo lo que necesitas para tus guardias</h2>
+    <div class="slider">
+      <button class="slider-btn slider-prev" aria-label="Anterior">
+        <span class="material-symbols-rounded">chevron_left</span>
+      </button>
+      <div class="slider-viewport">
+        <div class="slider-track">
+          <div class="slide">
+            <div class="slide-icon"><span class="material-symbols-rounded">sync</span></div>
+            <h3>Sincronización automática</h3>
+            <p>A las 10:00 y 22:00 la app actualiza tus turnos en segundo plano, sin que hagas nada. Siempre tienes el cuadrante más reciente.</p>
+          </div>
+          <div class="slide">
+            <div class="slide-icon"><span class="material-symbols-rounded">notifications_active</span></div>
+            <h3>Alarmas y recordatorios</h3>
+            <p>Configura avisos 2, 4, 8, 12 o 24&nbsp;h antes de cada turno para no pillar a nadie por sorpresa.</p>
+          </div>
+          <div class="slide">
+            <div class="slide-icon"><span class="material-symbols-rounded">calendar_month</span></div>
+            <h3>Calendario mensual</h3>
+            <p>Navega entre meses con un gesto. Tus turnos D y N siempre visibles de un vistazo.</p>
+          </div>
+          <div class="slide">
+            <div class="slide-icon"><span class="material-symbols-rounded">bar_chart</span></div>
+            <h3>Estadísticas anuales</h3>
+            <p>Consulta el total de guardias, horas trabajadas y el reparto día/noche mes a mes.</p>
+          </div>
+          <div class="slide">
+            <div class="slide-icon"><span class="material-symbols-rounded">edit_note</span></div>
+            <h3>Notas personales</h3>
+            <p>Añade anotaciones privadas a cualquier día del calendario, solo visibles para ti.</p>
+          </div>
+          <div class="slide">
+            <div class="slide-icon"><span class="material-symbols-rounded">palette</span></div>
+            <h3>Tema y colores</h3>
+            <p>Elige entre tema claro u oscuro y personaliza el color de acento a tu gusto.</p>
+          </div>
+        </div>
+      </div>
+      <button class="slider-btn slider-next" aria-label="Siguiente">
+        <span class="material-symbols-rounded">chevron_right</span>
+      </button>
     </div>
-    <div class="feature-card">
-      <div class="feature-icon"><span class="material-symbols-rounded">sync</span></div>
-      <h3>Sincronización automática</h3>
-      <p>A las 10:00 y 22:00 la app actualiza tus turnos en segundo plano, sin que hagas nada.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon"><span class="material-symbols-rounded">notifications</span></div>
-      <h3>Alarmas y recordatorios</h3>
-      <p>Configura avisos 2, 4, 8, 12 o 24 horas antes de cada turno para no pillar a nadie por sorpresa.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon"><span class="material-symbols-rounded">bar_chart</span></div>
-      <h3>Estadísticas anuales</h3>
-      <p>Consulta el total de guardias, horas trabajadas y reparto día/noche mes a mes.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon"><span class="material-symbols-rounded">edit_note</span></div>
-      <h3>Notas personales</h3>
-      <p>Añade anotaciones privadas a cualquier día del calendario.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon"><span class="material-symbols-rounded">palette</span></div>
-      <h3>Tema claro y oscuro</h3>
-      <p>Personaliza el color de acento y elige el tema que mejor se adapte a tu turno de noche.</p>
-    </div>
+    <div class="slider-dots"></div>
   </div>
 </section>
 
-<!-- SCREENSHOTS GALLERY -->
-<section class="gallery">
-  <p class="section-label">Capturas de pantalla</p>
-  <h2 class="section-title">La app, de cerca</h2>
-  <div class="gallery-scroll">
-    <figure class="gallery-item">
-      <div class="phone-frame phone-frame--sm">
+<!-- SHOWCASE -->
+<section class="showcase" id="capturas">
+  <div class="showcase-inner">
+    <p class="section-label">Capturas de pantalla</p>
+    <h2 class="section-title">La app, de cerca</h2>
+    <div class="showcase-stage">
+      <div class="phone-frame phone-frame--lg">
         <div class="phone-frame__notch"></div>
-        <img src="assets/resumen-guardias.png" alt="Resumen de guardias" />
+        <img id="showcase-img" src="assets/resumen-guardias.png" alt="Resumen anual de guardias" />
       </div>
-      <figcaption>Resumen anual</figcaption>
-    </figure>
-    <figure class="gallery-item">
-      <div class="phone-frame phone-frame--sm">
-        <div class="phone-frame__notch"></div>
-        <img src="assets/notas-guardias.png" alt="Notas por día" />
-      </div>
-      <figcaption>Notas por día</figcaption>
-    </figure>
-    <figure class="gallery-item">
-      <div class="phone-frame phone-frame--sm">
-        <div class="phone-frame__notch"></div>
-        <img src="assets/ajustes.png" alt="Ajustes" />
-      </div>
-      <figcaption>Ajustes</figcaption>
-    </figure>
+    </div>
+    <div class="showcase-tabs">
+      <button class="showcase-tab active" data-src="assets/resumen-guardias.png" data-alt="Resumen anual">
+        <span class="material-symbols-rounded">bar_chart</span> Resumen
+      </button>
+      <button class="showcase-tab" data-src="assets/notas-guardias.png" data-alt="Notas por día">
+        <span class="material-symbols-rounded">edit_note</span> Notas
+      </button>
+      <button class="showcase-tab" data-src="assets/ajustes.png" data-alt="Ajustes">
+        <span class="material-symbols-rounded">settings</span> Ajustes
+      </button>
+    </div>
   </div>
 </section>
 
 <!-- CTA -->
 <section class="cta" id="descarga">
-  <img src="assets/app_icon.png" alt="Mis Guardias" class="cta-icon" />
-  <h2>Descarga Mis Guardias</h2>
-  <p>Disponible para Android. Conéctala con tu cuenta del portal RTSU Gipuzkoa y ten tus turnos siempre al día.</p>
-  <a href="https://play.google.com/store/apps/details?id=org.proyectozero.misguardias" class="btn btn-play" target="_blank" rel="noopener">
-    <img src="assets/GetItOnGooglePlay_Badge_Web_color_Spanish.svg" alt="Disponible en Google Play" class="play-badge" />
-  </a>
+  <div class="cta-inner">
+    <p class="section-label">Descarga</p>
+    <h2>Lista para instalar.</h2>
+    <p>Disponible para Android. Sin anuncios, sin suscripciones.<br/>Conéctala con tu cuenta del portal RTSU Gipuzkoa.</p>
+    <a href="https://play.google.com/store/apps/details?id=org.proyectozero.misguardias" class="btn-play" target="_blank" rel="noopener">
+      <img src="assets/GetItOnGooglePlay_Badge_Web_color_Spanish.svg" alt="Disponible en Google Play" class="play-badge" />
+    </a>
+  </div>
 </section>
 
 <!-- FOOTER -->

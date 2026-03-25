@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Política de Privacidad — Mis Guardias</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
   <style>
     .policy {
       max-width: 680px;
@@ -51,11 +52,15 @@
       line-height: 1.8;
       padding-left: 0;
     }
-    .policy ul li::before {
-      content: "—";
-      margin-right: 0.5rem;
+    .policy ul li {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .policy ul li .material-symbols-rounded {
+      font-size: 1rem;
       color: var(--blue);
-      font-weight: 700;
+      flex-shrink: 0;
     }
     .back-link {
       display: inline-flex;
@@ -79,13 +84,13 @@
     Mis Guardias<span class="dot">.</span>
   </a>
   <div class="nav-right">
-    <button id="theme-toggle" aria-label="Cambiar tema">🌙</button>
+    <button id="theme-toggle" aria-label="Cambiar tema"><span class="material-symbols-rounded">dark_mode</span></button>
   </div>
 </nav>
 
 <!-- CONTENIDO -->
 <main class="policy">
-  <a href="index.html" class="back-link">← Volver</a>
+  <a href="index.html" class="back-link"><span class="material-symbols-rounded">arrow_back</span> Volver</a>
 
   <header class="policy-header">
     <h1>Política de Privacidad</h1>
@@ -105,8 +110,8 @@
   <h2>Contacto</h2>
   <p>Para cualquier consulta relacionada con la privacidad, puede contactar con el autor:</p>
   <ul>
-    <li><strong>Sergio Moreno</strong></li>
-    <li><a href="https://proyectozero.org">proyectozero.org</a></li>
+    <li><span class="material-symbols-rounded">person</span><strong>Sergio Moreno</strong></li>
+    <li><span class="material-symbols-rounded">language</span><a href="https://proyectozero.org">proyectozero.org</a></li>
   </ul>
 </main>
 
