@@ -1,6 +1,6 @@
 (() => {
   // Única fuente de verdad para la versión mostrada en la web. Actualizar aquí con cada release en Google Play.
-  const APP_VERSION = '2.0.0';
+  const APP_VERSION = '2.1.0';
 
   const badge = document.getElementById('app-badge');
   if (badge) badge.textContent = `${badge.textContent} · v${APP_VERSION}`;
