@@ -22,97 +22,34 @@
   <link rel="icon" type="image/png" href="assets/app_icon.png" />
   <link rel="apple-touch-icon" href="assets/app_icon.png" />
 
+  <script>try{var t=localStorage.getItem('mg-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
   <script defer src="https://stats.proyectozero.org/script.js" data-website-id="f8254844-0311-4b6c-b45f-4c03fd6b84df"></script>
-  <style>
-    .policy {
-      max-width: 680px;
-      margin: 0 auto;
-      padding: 4rem 1.5rem 6rem;
-    }
-    .policy-header {
-      margin-bottom: 3rem;
-      padding-bottom: 2rem;
-      border-bottom: 1px solid var(--border);
-    }
-    .policy-header h1 {
-      font-size: clamp(1.8rem, 4vw, 2.4rem);
-      font-weight: 800;
-      margin-bottom: 0.5rem;
-    }
-    .policy-header time {
-      font-size: 0.85rem;
-      color: var(--muted);
-    }
-    .policy h2 {
-      font-size: 1.1rem;
-      font-weight: 700;
-      margin: 2.5rem 0 0.75rem;
-      color: var(--text);
-    }
-    .policy p {
-      font-size: 0.975rem;
-      color: var(--muted);
-      line-height: 1.8;
-      margin-bottom: 0.75rem;
-    }
-    .policy strong { color: var(--text); }
-    .policy a { color: var(--blue); text-decoration: none; }
-    .policy a:hover { text-decoration: underline; }
-    .policy ul {
-      list-style: none;
-      padding: 0;
-      margin: 0.5rem 0;
-    }
-    .policy ul li {
-      font-size: 0.975rem;
-      color: var(--muted);
-      line-height: 1.8;
-      padding-left: 0;
-    }
-    .policy ul li {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    .policy ul li .material-symbols-rounded {
-      font-size: 1rem;
-      color: var(--blue);
-      flex-shrink: 0;
-    }
-    .back-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      font-size: 0.875rem;
-      font-weight: 600;
-      color: var(--blue);
-      text-decoration: none;
-      margin-bottom: 2.5rem;
-    }
-    .back-link:hover { text-decoration: underline; }
-  </style>
 </head>
 <body>
 
-<!-- NAV -->
-<nav>
-  <a class="nav-logo" href="index.html">
-    <img src="assets/app_icon.png" alt="Mis Guardias" class="nav-icon" width="1024" height="1024" />
-    Mis Guardias<span class="dot">.</span>
-  </a>
-  <div class="nav-right">
-    <button id="theme-toggle" aria-label="Cambiar tema"><span class="material-symbols-rounded">dark_mode</span></button>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="./">
+      <img src="assets/app_icon.png" alt="" width="1024" height="1024" />
+      Mis Guardias
+    </a>
+    <div class="nav-actions">
+      <button id="theme-toggle" class="icon-btn" aria-label="Cambiar tema"></button>
+      <a class="btn" href="https://play.google.com/store/apps/details?id=org.proyectozero.misguardias" target="_blank" rel="noopener">Descargar</a>
+    </div>
   </div>
-</nav>
+</header>
 
-<!-- CONTENIDO -->
-<main class="policy">
-  <a href="index.html" class="back-link"><span class="material-symbols-rounded">arrow_back</span> Volver</a>
+<main class="wrap legal">
+  <a href="./" class="back">Volver</a>
 
-  <header class="policy-header">
-    <h1>Política de Privacidad</h1>
+  <header>
+    <h1>Política de privacidad</h1>
     <time datetime="2026-03">Última actualización: marzo de 2026</time>
   </header>
 
@@ -128,15 +65,20 @@
 
   <h2>Contacto</h2>
   <p>Para cualquier consulta relacionada con la privacidad, puede contactar con el autor:</p>
-  <ul>
-    <li><span class="material-symbols-rounded">person</span><strong>Sergio Moreno</strong></li>
-    <li><span class="material-symbols-rounded">language</span><a href="https://proyectozero.org">proyectozero.org</a></li>
-  </ul>
+  <dl class="specs">
+    <div><dt>Autor</dt><dd>Sergio Moreno</dd></div>
+    <div><dt>Web</dt><dd><a href="https://proyectozero.org">proyectozero.org</a></dd></div>
+  </dl>
 </main>
 
-<!-- FOOTER -->
-<footer>
-  <p>Hecho con ❤️ para el personal de <strong>RTSU Gipuzkoa</strong> por Sergio Moreno · <a href="https://proyectozero.org">Proyecto Zero</a></p>
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p>Mis Guardias, para el personal de RTSU Gipuzkoa. Hecha por Sergio Moreno · <a href="https://proyectozero.org">Proyecto Zero</a></p>
+    <ul>
+      <li><a href="./">Inicio</a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=org.proyectozero.misguardias" target="_blank" rel="noopener">Google Play</a></li>
+    </ul>
+  </div>
 </footer>
 
 <script src="main.js"></script>
