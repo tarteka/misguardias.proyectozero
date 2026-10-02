@@ -4,16 +4,52 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mis Guardias — Gestión de turnos RTSU Gipuzkoa</title>
+  <meta name="description" content="App Android para el personal de RTSU Gipuzkoa: consulta tus guardias, sincroniza el cuadrante con el portal del trabajador y recibe recordatorios antes de cada turno. Gratuita y sin anuncios." />
+  <link rel="canonical" href="https://misguardias.proyectozero.org/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://misguardias.proyectozero.org/" />
+  <meta property="og:title" content="Mis Guardias — Gestión de turnos RTSU Gipuzkoa" />
+  <meta property="og:description" content="App Android para el personal de RTSU Gipuzkoa: consulta tus guardias, sincroniza el cuadrante con el portal del trabajador y recibe recordatorios antes de cada turno. Gratuita y sin anuncios." />
+  <meta property="og:image" content="https://misguardias.proyectozero.org/assets/app_icon.png" />
+  <meta property="og:locale" content="es_ES" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Mis Guardias — Gestión de turnos RTSU Gipuzkoa" />
+  <meta name="twitter:description" content="App Android para el personal de RTSU Gipuzkoa: consulta tus guardias, sincroniza el cuadrante con el portal del trabajador y recibe recordatorios antes de cada turno. Gratuita y sin anuncios." />
+  <meta name="twitter:image" content="https://misguardias.proyectozero.org/assets/app_icon.png" />
+
+  <link rel="icon" type="image/png" href="assets/app_icon.png" />
+  <link rel="apple-touch-icon" href="assets/app_icon.png" />
+
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
   <script defer src="https://stats.proyectozero.org/script.js" data-website-id="f8254844-0311-4b6c-b45f-4c03fd6b84df"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Mis Guardias",
+    "url": "https://misguardias.proyectozero.org/",
+    "description": "App Android para el personal de RTSU Gipuzkoa: consulta tus guardias, sincroniza el cuadrante con el portal del trabajador y recibe recordatorios antes de cada turno.",
+    "operatingSystem": "Android",
+    "applicationCategory": "BusinessApplication",
+    "image": "https://misguardias.proyectozero.org/assets/app_icon.png",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR"
+    },
+    "installUrl": "https://play.google.com/store/apps/details?id=org.proyectozero.misguardias"
+  }
+  </script>
 </head>
 <body>
 
 <!-- NAV -->
 <nav>
   <div class="nav-logo">
-    <img src="assets/app_icon.png" alt="Mis Guardias" class="nav-icon" />
+    <img src="assets/app_icon.png" alt="Mis Guardias" class="nav-icon" width="1024" height="1024" />
     Mis Guardias<span class="dot">.</span>
   </div>
   <div class="nav-right">
@@ -26,11 +62,11 @@
 <section class="hero">
   <div class="hero-content">
     <div class="hero-text">
-      <div class="badge">RTSU Gipuzkoa · v1.4.1</div>
+      <div class="badge" id="app-badge">RTSU Gipuzkoa</div>
       <h1>Tus turnos,<br><em>siempre al día</em></h1>
       <p>Gestión de guardias sin esfuerzo. Sincronización directa con el portal del trabajador, recordatorios y todo tu cuadrante en un vistazo.</p>
       <a href="https://play.google.com/store/apps/details?id=org.proyectozero.misguardias" class="btn-play" target="_blank" rel="noopener">
-        <img src="assets/GetItOnGooglePlay_Badge_Web_color_Spanish.svg" alt="Disponible en Google Play" class="play-badge" />
+        <img src="assets/GetItOnGooglePlay_Badge_Web_color_Spanish.svg" alt="Disponible en Google Play" class="play-badge" width="239" height="71" />
       </a>
       <ul class="hero-chips">
         <li><span class="material-symbols-rounded">android</span> Android</li>
@@ -42,7 +78,7 @@
       <div class="hero-glow"></div>
       <div class="phone-frame phone-frame--lg">
         <div class="phone-frame__notch"></div>
-        <img id="calendar-screenshot" src="assets/calendario-claro.png" alt="Calendario de turnos" />
+        <img id="calendar-screenshot" src="assets/calendario-claro.png" alt="Calendario de turnos" width="1080" height="2400" />
       </div>
     </div>
   </div>
@@ -107,7 +143,7 @@
     <div class="showcase-stage">
       <div class="phone-frame phone-frame--lg">
         <div class="phone-frame__notch"></div>
-        <img id="showcase-img" src="assets/resumen-guardias.png" alt="Resumen anual de guardias" />
+        <img id="showcase-img" src="assets/resumen-guardias.png" alt="Resumen anual de guardias" width="1080" height="2400" />
       </div>
     </div>
     <div class="showcase-tabs">
@@ -131,7 +167,7 @@
     <h2>Lista para instalar.</h2>
     <p>Disponible para Android. Sin anuncios, sin suscripciones.<br/>Conéctala con tu cuenta del portal RTSU Gipuzkoa.</p>
     <a href="https://play.google.com/store/apps/details?id=org.proyectozero.misguardias" class="btn-play" target="_blank" rel="noopener">
-      <img src="assets/GetItOnGooglePlay_Badge_Web_color_Spanish.svg" alt="Disponible en Google Play" class="play-badge" />
+      <img src="assets/GetItOnGooglePlay_Badge_Web_color_Spanish.svg" alt="Disponible en Google Play" class="play-badge" width="239" height="71" />
     </a>
   </div>
 </section>
